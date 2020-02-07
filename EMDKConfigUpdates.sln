@@ -3,13 +3,27 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29306.81
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E9F02458-7094-4DA1-8C88-3AD5A67E1A14}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1EBC4335-DFBD-4B59-A2A7-85A2E9576684}"
 	ProjectSection(SolutionItems) = preProject
-		..\.editorconfig = ..\.editorconfig
-		..\.gitignore = ..\.gitignore
+		.editorconfig = .editorconfig
+		.gitignore = .gitignore
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EMDKConfigUpdates", "src\EMDKConfigUpdates\EMDKConfigUpdates.csproj", "{B2322E40-63B3-4D73-B6A1-4598AB6FB935}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B2322E40-63B3-4D73-B6A1-4598AB6FB935}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2322E40-63B3-4D73-B6A1-4598AB6FB935}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2322E40-63B3-4D73-B6A1-4598AB6FB935}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{B2322E40-63B3-4D73-B6A1-4598AB6FB935}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2322E40-63B3-4D73-B6A1-4598AB6FB935}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2322E40-63B3-4D73-B6A1-4598AB6FB935}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
