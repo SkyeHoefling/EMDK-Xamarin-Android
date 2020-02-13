@@ -11,7 +11,7 @@
 
 [assembly: global::Android.Runtime.ResourceDesignerAttribute("EMDKConfigUpdates.Resource", IsApplication=true)]
 
-namespace EMDKConfigUpdates
+namespace EMDKSampleApp
 {
 	
 	

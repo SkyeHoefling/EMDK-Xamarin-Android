@@ -5,15 +5,16 @@ using System;
 using System.Threading.Tasks;
 using Xamarin.Essentials;
 
-namespace EMDKConfigUpdates
+namespace EMDKSampleApp
 {
-	public class BarcodeScannerManager : Java.Lang.Object, EMDKManager.IEMDKListener
+	public class BarcodeScannerManager : Java.Lang.Object, EMDKManager.IEMDKListener, IBarcodeScannerManager
 	{
 		private EMDKManager _emdkManager;
 		private BarcodeManager _barcodeManager;
 		private Scanner _scanner;
 		public event EventHandler<Scanner.DataEventArgs> ScanReceived;
-		public bool IsScannerEnabled { get; private set; } = false;
+		public bool IsScannerEnabled { get; private set; }
+
 		public BarcodeScannerManager(Context context)
 		{
 			InitializeEMDK(context);
@@ -65,7 +66,7 @@ namespace EMDKConfigUpdates
 			InitializeBarcodeManager();
 		}
 
-		public void EnableScanner()
+		public void Enable()
 		{
 			if (_scanner == null)
 				return;
@@ -79,7 +80,7 @@ namespace EMDKConfigUpdates
 			IsScannerEnabled = true;
 		}
 
-		public void DisableScanner()
+		public void Disable()
 		{
 			if (_scanner == null)
 				return;
